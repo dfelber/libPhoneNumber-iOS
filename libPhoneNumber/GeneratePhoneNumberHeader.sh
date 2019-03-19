@@ -74,8 +74,6 @@ echo "#endif  // TESTING" >> "NBGeneratedPhoneNumberMetaData.h"
 # ShortNumberMetadata
 cat >> "NBGeneratedPhoneNumberMetaData.h" <<'EOF'
 
-#if SHORT_NUMBER_SUPPORT
-
 z_const Bytef kShortNumberMetaData[] = {
 EOF
 
@@ -87,7 +85,6 @@ z_const size_t kShortNumberMetaDataCompressedLength = sizeof(kShortNumberMetaDat
 EOF
 LIB_SIZE=$(stat -f%z "../libPhoneNumberTests/generatedJSON/ShortNumberMetaData.json")
 echo "z_const size_t kShortNumberMetaDataExpandedLength = $LIB_SIZE;" >> "NBGeneratedPhoneNumberMetaData.h"
-echo "#endif  // SHORT_NUMBER_SUPPORT" >> "NBGeneratedPhoneNumberMetaData.h"
 
 rm "$TEMPDIR/PhoneNumberMetaDataForTesting.zip"
 rm "$TEMPDIR/PhoneNumberMetaData.zip"

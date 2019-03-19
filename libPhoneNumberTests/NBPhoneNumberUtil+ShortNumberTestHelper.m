@@ -12,8 +12,6 @@
 #import "NBPhoneMetadata.h"
 #import "NBPhoneNumberDesc.h"
 
-#if SHORT_NUMBER_SUPPORT
-
 @interface NBPhoneNumberUtil()
 
 @property (nonatomic, strong, readonly) NBMetadataHelper *helper;
@@ -54,5 +52,3 @@
 }
 
 @end
-
-#endif // SHORT_NUMBER_SUPPORT

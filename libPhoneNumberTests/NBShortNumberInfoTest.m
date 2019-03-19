@@ -14,8 +14,7 @@
 #import "NBPhoneNumberDesc.h"
 #import "NBPhoneNumberUtil+ShortNumber.h"
 #import "NBPhoneNumberUtil+ShortNumberTest.h"
-
-#if SHORT_NUMBER_SUPPORT
+#import "NBPhoneNumberUtil+ShortNumberTestHelper.h"
 
 @interface NBShortNumberInfoTest: XCTestCase
 @end
@@ -491,5 +490,3 @@
 }
 
 @end
-
-#endif // SHORT_NUMBER_SUPPORT

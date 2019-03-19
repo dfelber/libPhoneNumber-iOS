@@ -14,12 +14,7 @@
 
 // Cached metadata
 @property (nonatomic, strong) NSCache<NSString *, NBPhoneMetaData *> *metadataCache;
-
-#if SHORT_NUMBER_SUPPORT
-
 @property (nonatomic, strong) NSCache<NSString *, NBPhoneMetaData *> *shortNumberMetadataCache;
-
-#endif //SHORT_NUMBER_SUPPORT
 
 @end
 
@@ -41,9 +36,7 @@ static NSString *StringByTrimming(NSString *aString) {
   self = [super init];
   if (self != nil) {
     _metadataCache = [[NSCache alloc] init];
-#if SHORT_NUMBER_SUPPORT
     _shortNumberMetadataCache = [[NSCache alloc] init];
-#endif //SHORT_NUMBER_SUPPORT
   }
   return self;
 }
@@ -182,7 +175,6 @@ static NSString *StringByTrimming(NSString *aString) {
   return string.length != 0;
 }
 
-#if SHORT_NUMBER_SUPPORT
 
 + (NSDictionary *)shortNumberDataMap {
     static NSDictionary *shortNumberDataDictionary;
@@ -220,8 +212,6 @@ static NSString *StringByTrimming(NSString *aString) {
 
   return nil;
 }
-
-#endif // SHORT_NUMBER_SUPPORT
 
 
 /**

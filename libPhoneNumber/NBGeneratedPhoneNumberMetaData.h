@@ -4246,8 +4246,6 @@ z_const size_t kPhoneNumberMetaDataCompressedLength = sizeof(kPhoneNumberMetaDat
 z_const size_t kPhoneNumberMetaDataExpandedLength = 315645;
 #endif  // TESTING
 
-#if SHORT_NUMBER_SUPPORT
-
 z_const Bytef kShortNumberMetaData[] = {
   0x1f, 0x8b, 0x08, 0x08, 0x5a, 0x2a, 0xbe, 0x5b, 0x00, 0x03, 0x53, 0x68,
   0x6f, 0x72, 0x74, 0x4e, 0x75, 0x6d, 0x62, 0x65, 0x72, 0x4d, 0x65, 0x74,
@@ -5514,4 +5512,3 @@ z_const Bytef kShortNumberMetaData[] = {
 };
 z_const size_t kShortNumberMetaDataCompressedLength = sizeof(kShortNumberMetaData);
 z_const size_t kShortNumberMetaDataExpandedLength = 151594;
-#endif  // SHORT_NUMBER_SUPPORT

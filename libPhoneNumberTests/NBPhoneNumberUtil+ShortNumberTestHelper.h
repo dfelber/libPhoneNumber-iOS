@@ -10,8 +10,6 @@
 #import "NBPhoneNumberUtil.h"
 #import "NBPhoneNumberUtil+ShortNumber.h"
 
-#if SHORT_NUMBER_SUPPORT
-
 NS_ASSUME_NONNULL_BEGIN
 
 /**
@@ -25,5 +23,3 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 NS_ASSUME_NONNULL_END
-
-#endif // SHORT_NUMBER_SUPPORT

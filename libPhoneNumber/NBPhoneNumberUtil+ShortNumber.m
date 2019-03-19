@@ -17,8 +17,6 @@
 #import "NBRegExMatcher.h"
 #import "NBRegularExpressionCache.h"
 
-#if SHORT_NUMBER_SUPPORT
-
 static NSString * const PLUS_CHARS_PATTERN = @"[+\uFF0B]+";
 
 @interface NBPhoneNumberUtil()
@@ -322,5 +320,3 @@ static NSString * const PLUS_CHARS_PATTERN = @"[+\uFF0B]+";
 }
 
 @end
-
-#endif // SHORT_NUMBER_SUPPORT

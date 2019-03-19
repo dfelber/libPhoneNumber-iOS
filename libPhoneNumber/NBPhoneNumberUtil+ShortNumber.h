@@ -13,8 +13,6 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-#if SHORT_NUMBER_SUPPORT
-
 typedef NS_ENUM(NSUInteger, NBEShortNumberCost) {
   NBEShortNumberCostUnknown = 0,
   NBEShortNumberCostTollFree = 1,
@@ -191,8 +189,6 @@ typedef NS_ENUM(NSUInteger, NBEShortNumberCost) {
 - (BOOL)isEmergencyNumber:(NSString *)number forRegion:(NSString *)regionCode;
 
 @end
-
-#endif // SHORT_NUMBER_SUPPORT
 
 NS_ASSUME_NONNULL_END
 
